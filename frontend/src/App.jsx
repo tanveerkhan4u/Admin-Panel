@@ -8,16 +8,23 @@ import Navbar from './Components/Navbar';
 
 
 function App() {
-  
+
 
   return (
-    <div>
-    
-    <Sidebar/>
-    
-
-      
+    <div className='container-fluid'>
+      <div className='row'>
+        <div className="col-2">
+          <Sidebar />
+        </div>
+        <div>
+          
+        </div>
+      </div>
     </div>
+
+
+
+
   )
 }
 
