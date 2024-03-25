@@ -1,22 +1,25 @@
 import React from 'react'
 import './App.css'
-import { BrowserRouter, Link, Route, Routes, NavLink, } from 'react-router-dom';
+import Sidebar from './Components/Sidebar';
+import Navbar from './Components/Navbar';
+
+
+
 
 
 function App() {
   
 
   return (
-    <>
-    <BrowserRouter>
-    <Admin></Admin>
-    <Routes>
+    <div>
+    
+    <Sidebar/>
     
 
-    </Routes>
-    </BrowserRouter>  
-    </>
+      
+    </div>
   )
 }
 
 export default App
+
