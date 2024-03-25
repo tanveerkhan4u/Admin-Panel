@@ -1,30 +1,18 @@
 import React from 'react'
-import './App.css'
-import Sidebar from './Components/Sidebar';
-import Navbar from './Components/Navbar';
+import Admin from './Components/Admin'
+import { BrowserRouter, Routes, Route, Link, NavLink } from 'react-router-dom'
 
-
-
-
-
-function App() {
-
-
+const App = () => {
   return (
-    <div className='container-fluid'>
-      <div className='row'>
-        <div className="col-2">
-          <Sidebar />
-        </div>
-        <div>
-          
-        </div>
-      </div>
+    <div>
+      <BrowserRouter>
+      <Admin/>
+      <Routes>
+
+        <Route path="Admin" element={<Admin />} />
+      </Routes>
+      </BrowserRouter>
     </div>
-
-
-
-
   )
 }
 
