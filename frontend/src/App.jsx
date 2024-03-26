@@ -18,9 +18,9 @@ const App = () => {
 
   return (
     <BrowserRouter>
-    <div className='container-fluid bg-secondary min-vh-100'>
+    <div className='container-fluid bg-white min-vh-100'>
       <div className='row'>
-       {toggle &&  <div className='col-2 bg-white vh-100'>
+       {toggle &&  <div className='col-2 bg-body-secondary vh-100'>
           <Sidebar />
         </div>}
     

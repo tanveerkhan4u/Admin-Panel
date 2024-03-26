@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = ({Toggle}) => {
   return (
     <div >
-      <nav className="navbar navbar-white navbar-expand-lg bg-white px-4 ">
+      <nav className="navbar navbar-white navbar-expand-lg bg-body-secondary px-4 ">
         <div className="container-fluid">
           <i className="fa-solid fa-bars bor fs-5 " onClick={Toggle}>
           </i>
