@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({Toggle}) => {
   return (
-    <div>
-      <nav className="navbar navbar-white navbar-expand-lg bg-white px-3">
+    <div >
+      <nav className="navbar navbar-white navbar-expand-lg bg-white px-4 ">
         <div className="container-fluid">
-          <i className="fa-solid fa-bars bor fs-5 ">
-            
+          <i className="fa-solid fa-bars bor fs-5 " onClick={Toggle}>
           </i>
+            
           <button
             className="navbar-toggler"
             type="button"
@@ -32,9 +32,9 @@ const Navbar = () => {
                 >
                   John Doe
                 </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">
+                <ul className="dropdown-menu bg-body-secondary" >
+                  <li >
+                    <a className="dropdown-item" href="#" >
                       Profile
                     </a>
                   </li>
@@ -46,7 +46,7 @@ const Navbar = () => {
                   <li>
                   
                   </li>
-                  <li>
+                  <li >
                     <a className="dropdown-item" href="#">
                       Log Out
                     </a>
