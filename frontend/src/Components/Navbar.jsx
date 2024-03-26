@@ -1,13 +1,27 @@
 import React from 'react'
 
-const Navbar = ({Toggle}) => {
+const Navbar = ({ Toggle }) => {
   return (
     <div >
       <nav className="navbar navbar-white navbar-expand-lg bg-body-secondary px-4 ">
         <div className="container-fluid">
           <i className="fa-solid fa-bars bor fs-5 " onClick={Toggle}>
           </i>
-            
+          <form className="d-flex " role="search">
+            <input
+              className="form-control  ms-5"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+            {/* <div className='cole'>
+              <i className="fa-solid fa-bell ms-5 fs-5 "></i>
+              <span className='ms-2'>Notification</span> 
+              <i className="fa-solid fa-envelope ms-5 fs-5"></i>
+              <span className='ms-2'>Message</span>
+            </div> */}
+
           <button
             className="navbar-toggler"
             type="button"
@@ -19,13 +33,15 @@ const Navbar = ({Toggle}) => {
           >
             <span className="navbar-toggler-icon" />
           </button>
+
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-             
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown d-flex ">
+
+                <img src='https://themewagon.github.io/dashmin/img/user.jpg' className='rounded-circle  ' alt='' />
                 <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
+                  className="nav-link dropdown-toggle  fs-5 "
+
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -44,7 +60,7 @@ const Navbar = ({Toggle}) => {
                     </a>
                   </li>
                   <li>
-                  
+
                   </li>
                   <li >
                     <a className="dropdown-item" href="#">
@@ -53,9 +69,9 @@ const Navbar = ({Toggle}) => {
                   </li>
                 </ul>
               </li>
-              
+
             </ul>
-           
+
           </div>
         </div>
       </nav>

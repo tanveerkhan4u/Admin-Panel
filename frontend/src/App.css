@@ -10,5 +10,11 @@
 .dash{
   color : #009cff; 
 }
-  
-  
+.nav-item a:hover {
+  color : #009cff; 
+  cursor: pointer;
+}
+.cole :hover{
+  color : #009cff; 
+  cursor: pointer;
+}  
