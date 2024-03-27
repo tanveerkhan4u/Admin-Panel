@@ -217,7 +217,52 @@ const Form = () => {
 
         </div>
       </div>
-  
+      <div className="row g-4 justify-content-center mt-3 gap-3">
+        <div className="col-md-5  bg-body-secondary p-4">
+          <h5 className='mb-3'>Select</h5>
+          <>
+            <select
+              className="form-select form-select-sm"
+              aria-label="Small select example"
+            >
+              <option selected="">Open this select menu</option>
+              <option value={1}>One</option>
+              <option value={2}>Two</option>
+              <option value={3}>Three</option>
+            </select>
+            <select className="form-select mt-3" aria-label="Default select example">
+              <option selected="">Open this select menu</option>
+              <option value={1}>One</option>
+              <option value={2}>Two</option>
+              <option value={3}>Three</option>
+            </select>
+            <select
+              className="form-select form-select-lg mb-3 mt-3"
+              aria-label="Large select example"
+            >
+              <option selected="">Open this select menu</option>
+              <option value={1}>One</option>
+              <option value={2}>Two</option>
+              <option value={3}>Three</option>
+            </select>
+          </>
+          <select className="form-select" size={3} aria-label="Size 3 select example">
+            <option selected="">Open this select menu</option>
+            <option value={1}>One</option>
+            <option value={2}>Two</option>
+            <option value={3}>Three</option>
+          </select>
+        </div>
+        <div className="col-md-5 bg-body-secondary p-4">
+        <h5 className='mb-3'>Check, Radio & Switch</h5>
+
+        </div>
+
+
+
+
+
+      </div>
 
     </div>
   )
