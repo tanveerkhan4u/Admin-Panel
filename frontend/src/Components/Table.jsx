@@ -140,7 +140,7 @@ const Table = () => {
 
         </div>
       </div>
-      <div className="row  mt-4 gy-4 justify-content-center gap-3">
+      <div className="row   mt-4  gy-4  justify-content-center gap-3">
         <div className="col-md-5 bg-body-secondary p-4">
           <h5 className='mb-4 '>Bordered Table</h5>
           <table class="table table-bordered">
@@ -207,7 +207,51 @@ const Table = () => {
 
         </div>
       </div>
+      <div className="row mt-2 gy-4  ">
+        <div className=" table-responsive">
+        <table className="table   ">
+            <thead>
+              <tr  >
+                <th className='text-secondary bg-body-secondary' scope="col">#</th>
+                <th className='text-secondary bg-body-secondary' scope="col ">First</th>
+                <th className='text-secondary bg-body-secondary' scope="col">Handle</th>
+                <th className='text-secondary bg-body-secondary' scope="col">Last</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th className='text-secondary bg-body-secondary' scope="row">1</th>
+                <td className='text-secondary bg-body-secondary'>Mark</td>
+                <td className='text-secondary bg-body-secondary'>Otto</td>
+                <td className='text-secondary bg-body-secondary'>@mdo</td>
+              </tr>
+              <tr>
+                <th className='text-secondary bg-body-secondary' scope="row">2</th>
+                <td className='text-secondary bg-body-secondary'>Jacob</td>
+                <td className='text-secondary bg-body-secondary'>Thornton</td>
+                <td className='text-secondary bg-body-secondary'>@fat</td>
+              </tr>
+              <tr>
+                <th className='text-secondary bg-body-secondary' scope="row">3</th>
+                <td className='text-secondary bg-body-secondary' colspan="2">Larry the Bird</td>
+                <td className='text-secondary bg-body-secondary'>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
 
+        </div>
+
+      </div>
+      <div className="row p-4 bg-body-secondary mt-4  ">
+        <div className='col-md-6 text-start'>
+          <span className='text-primary fs-5'>© Your Site Name,</span>
+          <span className='text ms-2 fs-5'>All Right Reserved.</span>
+        </div>
+        <div className='col-md-6 text-end'>
+        <span className='text fs-5'>Designed By</span>
+          <span className='text-primary fs-5 ms-2'>HTML Codex</span>
+        </div>
+      </div>
     </div>
   )
 }
