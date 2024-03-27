@@ -24,7 +24,7 @@ const App = () => {
           <Sidebar />
         </div>}
     
-        <div className='col'>
+        <div className='col'>   
           <Home  Toggle={Toggle}/>
         </div>
         <Routes>
