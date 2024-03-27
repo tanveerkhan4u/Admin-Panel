@@ -27,15 +27,9 @@ const App = () => {
         <div className='col'>
           <Home  Toggle={Toggle}/>
         </div>
-         
-          
-        
-  
         <Routes>
-        
           <Route path='/Form' element={<Form />} />
            <Route path='/Table' element={<Table />} />
-
           </Routes>
       </div>
     </div>
@@ -44,4 +38,10 @@ const App = () => {
 }
 
 export default App;
+         
+          
+        
+  
+        
+
 
