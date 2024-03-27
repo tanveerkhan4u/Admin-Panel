@@ -292,11 +292,195 @@ const Form = () => {
             <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled />
             <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
           </div>
-          <hr/>
-          
+          <hr />
+          <>
+            <div className="form-check">
+              <input
+                className="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+              />
+              <label className="form-check-label" htmlFor="flexRadioDefault1">
+                Default radio
+              </label>
+            </div>
+            <div className="form-check">
+              <input
+                className="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+                defaultChecked=""
+              />
+              <label className="form-check-label" htmlFor="flexRadioDefault2">
+                Default checked radio
+              </label>
+            </div>
+          </>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+            <label class="form-check-label" for="inlineRadio1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+            <label class="form-check-label" for="inlineRadio2">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
+            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+          </div>
+          <hr />
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+          <div className="form-check form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckChecked"
+              defaultChecked=""
+            />
+            <label className="form-check-label" htmlFor="flexSwitchCheckChecked">
+              Checked switch checkbox input
+            </label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled />
+            <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled />
+            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+          </div>
+
 
         </div>
       </div>
+      <div className="row  g-4 justify-content-center mt-3 gap-3">
+        <div className="col-md-5 bg-body-secondary p-4">
+          <h5 className='mb-3'>Input Group</h5>
+          <>
+            <div className="input-group mb-3">
+              <span className="input-group-text" id="basic-addon1">
+                @
+              </span>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Username"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div className="input-group mb-3">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Recipient's username"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <span className="input-group-text" id="basic-addon2">
+                @example.com
+              </span>
+            </div>
+            <div className="mb-3">
+              <label htmlFor="basic-url" className="form-label">
+                Your vanity URL
+              </label>
+              <div className="input-group">
+                <span className="input-group-text" id="basic-addon3">
+                  https://example.com/users/
+                </span>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="basic-url"
+                  aria-describedby="basic-addon3 basic-addon4"
+                />
+              </div>
+              <div className="form-text" id="basic-addon4">
+                Example help text goes outside the input group.
+              </div>
+            </div>
+            <div className="input-group mb-3">
+              <span className="input-group-text">$</span>
+              <input
+                type="text"
+                className="form-control"
+                aria-label="Amount (to the nearest dollar)"
+              />
+              <span className="input-group-text">.00</span>
+            </div>
+            <div className="input-group mb-3">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Username"
+                aria-label="Username"
+              />
+              <span className="input-group-text">@</span>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Server"
+                aria-label="Server"
+              />
+            </div>
+            <div className="input-group">
+              <span className="input-group-text">With textarea</span>
+              <textarea
+                className="form-control"
+                aria-label="With textarea"
+                defaultValue={""}
+              />
+            </div>
+          </>
+
+
+        </div>
+        <div className="col-md-5 bg-body-secondary p-4 ">
+          <h5 className='mb-3'>Sizing</h5>
+          <>
+            <input
+              className="form-control form-control-lg "
+              type="text"
+              placeholder=".form-control-lg"
+              aria-label=".form-control-lg example"
+            />
+            <input
+              className="form-control mt-3"
+              type="text"
+              placeholder="Default input"
+              aria-label="default input example"
+            />
+            <input
+              className="form-control form-control-sm mt-3"
+              type="text"
+              placeholder=".form-control-sm"
+              aria-label=".form-control-sm example"
+            />
+          </>
+
+
+        </div>
+      </div>
+      <div className="row p-4 bg-body-secondary mt-4  ">
+        <div className='col-md-6 text-start'>
+          <span className='text-primary fs-5'>© Your Site Name,</span>
+          <span className='text ms-2 fs-5'>All Right Reserved.</span>
+        </div>
+        <div className='col-md-6 text-end'>
+        <span className='text fs-5'>Designed By</span>
+          <span className='text-primary fs-5 ms-2'>HTML Codex</span>
+        </div>
+
+      </div>
+
 
 
 
