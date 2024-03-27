@@ -254,15 +254,54 @@ const Form = () => {
           </select>
         </div>
         <div className="col-md-5 bg-body-secondary p-4">
-        <h5 className='mb-3'>Check, Radio & Switch</h5>
+          <h5 className='mb-3'>Check, Radio & Switch</h5>
+          <>
+            <div className="form-check">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                defaultValue=""
+                id="flexCheckDefault"
+              />
+              <label className="form-check-label" htmlFor="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+            <div className="form-check">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                defaultValue=""
+                id="flexCheckChecked"
+                defaultChecked=""
+              />
+              <label className="form-check-label" htmlFor="flexCheckChecked">
+                Checked checkbox
+              </label>
+            </div>
+          </>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+            <label class="form-check-label" for="inlineCheckbox2">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled />
+            <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+          </div>
+          <hr/>
+          
 
         </div>
-
-
-
-
-
       </div>
+
+
+
+
+
 
     </div>
   )
