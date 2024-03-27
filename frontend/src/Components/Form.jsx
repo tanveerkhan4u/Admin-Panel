@@ -480,15 +480,15 @@ const Form = () => {
         </div>
 
       </div>
-
-
-
-
-
-
-
     </div>
   )
 }
 
 export default Form;
+
+
+
+
+
+
+
