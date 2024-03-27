@@ -292,7 +292,7 @@ const Form = () => {
             <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled />
             <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
           </div>
-          <hr />
+          <hr  />
           <>
             <div className="form-check">
               <input
