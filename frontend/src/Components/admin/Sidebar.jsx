@@ -14,11 +14,11 @@ const Sidebar = () => {
           <i className="fa-solid fa-gauge-high fs-5 me-3 "></i>
           <span className='fs-5 '>Dashboard</span>
         </a>
-        <Link to='/Table' className='list-group-item  py-2 mb-2'>
+        <Link to='/admin/Table' className='list-group-item  py-2 mb-2'>
         <i className="fa-solid fa-table fs-5 me-3"></i>
           <span className='fs-5'>Table</span>
         </Link>
-        <Link to='/Form' className='list-group-item  py-2'>
+        <Link to='/admin/Form' className='list-group-item  py-2'>
         <i className="fa-solid fa-keyboard fs-5 me-3"></i>
           <span className='fs-5'>Form</span>
         </Link>
