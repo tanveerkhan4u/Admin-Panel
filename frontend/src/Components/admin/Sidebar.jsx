@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
-    <div className=' sidebar p-2 '>
+    <div className=' sidebar p-2 ' style={{position: 'fixed'}}>
       <div className='m-2'>
         <i className='my-2 me-3 fs-4  '></i>
         <span className='brand-name fs-3 fw-bold dash'> # Dashmin</span>

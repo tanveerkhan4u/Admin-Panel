@@ -1,47 +1,37 @@
 import React, { useState } from 'react'
 import './App.css'
-import Sidebar from './Components/Sidebar'
-import Home from './Components/Home'
-import Form from './Components/Form'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Table from './Components/Table'
-import Navbar from './Components/Navbar'
+
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import Table from './Components/admin/Table'
+
+import Admin from './Components/admin'
+import Form from './Components/admin/Form'
 
 
 
 const App = () => {
+
   
-  const [toggle, settoggle] = useState(true)
-  const Toggle = () => {
-    settoggle(!toggle)
-  }
 
   return (
     <BrowserRouter>
-    <div className='container-fluid bg-white min-vh-100'>
-      <div className='row'>
-       {toggle &&  <div className='col-2 bg-body-secondary vh-100'>
-          <Sidebar />
-        </div>}
-    
-        <div className='col'>   
-          <Home  Toggle={Toggle}/>
-        </div>
-        <Routes>
-          <Route path='/Form' element={<Form />} />
-           <Route path='/Table' element={<Table />} />
-          </Routes>
-      </div>
-    </div>
-      </BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Navigate to="/admin/Table" />} />
+        <Route path='/admin' element={<Admin />}>
+          <Route path='Table' element={<Table />} />
+          <Route path='Form' element={<Form />} />
+          {/* <Route path='' element={<Table />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
 export default App;
-         
-          
-        
-  
-        
+
+
+
+
+
 
 

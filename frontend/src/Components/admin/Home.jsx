@@ -1,8 +1,10 @@
 import React from 'react'
 import Navbar from './Navbar'
-import { Link } from 'react-router-dom'
+import { Link, useOutlet } from 'react-router-dom'
 
-const Home = ({Toggle}) => {
+const Home = () => {
+  const outlet = useOutlet();
+  const { Toggle } = outlet.props;
   return (
     <div >
       <Navbar  Toggle={Toggle}/>
