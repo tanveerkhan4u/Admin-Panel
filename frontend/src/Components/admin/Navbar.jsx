@@ -18,7 +18,7 @@ const Navbar = ({ Toggle }) => {
         <div className='cole'>
               <i className="fa-solid fa-bell ms-5 fs-5 "></i>
               <span className='ms-2'>Notification</span> 
-              <i className="fa-solid fa-envelope ms-5 fs-5"></i>
+              <i className="fa-solid fa-envelope ms-5 fs-5"></i> 
               <span className='ms-2'>Message</span>
             </div> 
              

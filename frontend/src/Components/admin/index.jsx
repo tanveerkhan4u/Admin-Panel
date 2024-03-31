@@ -14,7 +14,7 @@ const Admin = () => {
   return (
     <>
       <Navbar Toggle={Toggle} />
-      <div className='container-fluid bg-white'>
+      <div className='container-fluid bg-white' >
         <div className='row'>
           {toggle && <div className='col-2 bg-body-secondary'>
             <Sidebar />
