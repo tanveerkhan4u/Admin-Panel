@@ -6,6 +6,9 @@ import Table from './Components/admin/Table'
 
 import Admin from './Components/admin'
 import Form from './Components/admin/Form'
+import Add from './Components/Add'
+import View from './Components/admin/View'
+import Course from './Components/admin/Course'
 
 
 
@@ -20,6 +23,9 @@ const App = () => {
         <Route path='/admin' element={<Admin />}>
           <Route path='Table' element={<Table />} />
           <Route path='Form' element={<Form />} />
+          <Route path='Add' element={<Add />} />
+          <Route path='View' element={<View />} />
+          <Route path='Course' element={<Course />} />
           {/* <Route path='' element={<Table />} /> */}
         </Route>
       </Routes>

@@ -22,6 +22,22 @@ const Sidebar = () => {
         <i className="fa-solid fa-keyboard fs-5 me-3"></i>
           <span className='fs-5'>Form</span>
         </Link>
+        <Link to='/admin/Add' className='list-group-item mt-2 py-2'>
+        <i className="fa-solid fa-keyboard fs-5 me-3"></i>
+          <span className='fs-5'>Add Teacher</span>
+        </Link>
+        <Link to='/admin/View' className='list-group-item mt-2 py-2'>
+        <i className="fa-solid fa-keyboard fs-5 me-3"></i>
+          <span className='fs-5'>View Teacher</span>
+        </Link>
+        <Link to='/admin/Course' className='list-group-item mt-2 py-2'>
+        <i className="fa-solid fa-keyboard fs-5 me-3"></i>
+          <span className='fs-5'>Add Course</span>
+        </Link>
+        <Link to='/admin/Add' className='list-group-item mt-2 py-2'>
+        <i className="fa-solid fa-keyboard fs-5 me-3"></i>
+          <span className='fs-5'>Form</span>
+        </Link>
       </div>
     </div>
   )
