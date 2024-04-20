@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Course = () => {
+const ViewTeacher = () => {
   return (
     <div>
        <div className="row  g-4 justify-content-center mt-3 ">
         <div className="col-md-10 bg-body-secondary p-4 ">
-          <h5 className='mb-3'>View Course</h5>
+          <h5 className='mb-3'>View Teacher</h5>
           <>
             <div className="input-group mb-3">
               <span className="input-group-text" id="basic-addon1">
@@ -91,4 +91,4 @@ const Course = () => {
   )
 }
 
-export default Course
+export default ViewTeacher;

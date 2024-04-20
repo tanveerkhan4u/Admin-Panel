@@ -9,6 +9,10 @@ import Form from './Components/admin/Form'
 import Add from './Components/Add'
 import View from './Components/admin/View'
 import Course from './Components/admin/Course'
+import ViewTeacher from './Components/admin/ViewTeacher'
+import Addcourse from './Components/admin/Addcourse'
+import Addquestion from './Components/admin/Addquestion'
+import Viewquestion from './Components/admin/Viewquestion'
 
 
 
@@ -25,6 +29,10 @@ const App = () => {
           <Route path='Form' element={<Form />} />
           <Route path='Add' element={<Add />} />
           <Route path='View' element={<View />} />
+          <Route path='ViewTeacher' element={<ViewTeacher />} />
+          <Route path='Addcourse' element={<Addcourse />} />
+          <Route path='Addquestion' element={<Addquestion />} />
+          <Route path='Viewquestion' element={<Viewquestion />} />
           <Route path='Course' element={<Course />} />
           {/* <Route path='' element={<Table />} /> */}
         </Route>

@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
-    <div className=' sidebar p-2 ' style={{position: 'fixed'}}>
+    <div className=' sidebar1 p-2' style={{position: 'fixed'}}>
       <div className='m-2'>
         <i className='my-2 me-3 fs-4  '></i>
         <span className='brand-name fs-3 fw-bold dash'> # Dashmin</span>
@@ -26,17 +26,25 @@ const Sidebar = () => {
         <i className="fa-solid fa-keyboard fs-5 me-3"></i>
           <span className='fs-5'>Add Teacher</span>
         </Link>
-        <Link to='/admin/View' className='list-group-item mt-2 py-2'>
+        <Link to='/admin/ViewTeacher' className='list-group-item mt-2 py-2'>
         <i className="fa-solid fa-keyboard fs-5 me-3"></i>
           <span className='fs-5'>View Teacher</span>
         </Link>
-        <Link to='/admin/Course' className='list-group-item mt-2 py-2'>
+        <Link to='/admin/Addcourse' className='list-group-item mt-2 py-2'>
         <i className="fa-solid fa-keyboard fs-5 me-3"></i>
           <span className='fs-5'>Add Course</span>
         </Link>
-        <Link to='/admin/Add' className='list-group-item mt-2 py-2'>
+        <Link to='/admin/Course' className='list-group-item mt-2 py-2'>
         <i className="fa-solid fa-keyboard fs-5 me-3"></i>
-          <span className='fs-5'>Form</span>
+          <span className='fs-5'>View Course</span>
+        </Link>
+        <Link to='/admin/Addquestion' className='list-group-item mt-2 py-2'>
+        <i className="fa-solid fa-keyboard fs-5 me-3"></i>
+          <span className='fs-5'>Add Question</span>
+        </Link>
+        <Link to='/admin/Viewquestion' className='list-group-item mt-2 py-2'>
+        <i className="fa-solid fa-keyboard fs-5 me-3"></i>
+          <span className='fs-5'>View Question</span>
         </Link>
       </div>
     </div>

@@ -19,4 +19,10 @@
 .cole :hover{
   color : #009cff; 
   cursor: pointer;
-}  
+} 
+@media screen and (min-width: 100px) and (max-width: 1000px) {
+  .sidebar1{
+    
+    
+  }
+} 
